@@ -15,7 +15,7 @@
 
 .banner {
   background-image: url(/images/banner.png);
-  background-size: 100% 120%;
+  background-size: cover;
 }
 .coins {
   background-image: url(/images/coins.png);

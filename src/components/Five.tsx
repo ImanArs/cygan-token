@@ -1,4 +1,9 @@
+import useLanguage from "../hooks";
+import { translates } from "../translates";
+
 export const Five = () => {
+  const { language } = useLanguage();
+  const translated = translates[language];
   return (
     <div className="bg-[#000]">
       <div className="cubes relative min-h-[120vh]">
@@ -19,19 +24,27 @@ export const Five = () => {
         />
         <div className="w-full lodrina pt-[140px]">
           <div className="relative w-[50%] bg-white border-[6px] border-[#000] rounded-[0_88px_88px_0]">
-            <p className="text-[100px] ml-auto text-center">Crypto</p>
+            <p className="text-[100px] ml-auto text-center">
+              {translated.five[1]}
+            </p>
             <h2 className="absolute top-[-85%] left-[67%] text-[130px] font-bold stroke lodrina text-[#fff]">
-              FAQ
+              {translated.five.title}
             </h2>
           </div>
           <div className="w-[50%] ml-auto bg-white border-[6px] border-[#000] rounded-[88px_0_0_88px]">
-            <p className="text-[100px] ml-auto text-center">Fun</p>
+            <p className="text-[100px] ml-auto text-center">
+              {translated.five[2]}
+            </p>
           </div>
           <div className="w-[50%] bg-white border-[6px] border-[#000] rounded-[0_88px_88px_0]">
-            <p className="text-[100px] ml-auto text-center">Gucci</p>
+            <p className="text-[100px] ml-auto text-center">
+              {translated.five[3]}
+            </p>
           </div>
           <div className="w-[50%] ml-auto bg-white border-[6px] border-[#000] rounded-[88px_0_0_88px]">
-            <p className="text-[100px] ml-auto text-center">Dubai</p>
+            <p className="text-[100px] ml-auto text-center">
+              {translated.five[4]}
+            </p>
           </div>
         </div>
       </div>

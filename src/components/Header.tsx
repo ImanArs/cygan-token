@@ -1,16 +1,30 @@
+import useLanguage from "../hooks";
+import { translates } from "../translates";
+
 export const Header = () => {
+  const { language } = useLanguage();
+  const translated = translates[language];
+
   return (
-    <header className="ultra absolute z-[1] max-w-[1620px] w-full mx-auto left-[50%] translate-x-[-50%] px-[62px]">
-      <nav className="flex justify-between text-[44px] font-[400] gap-[140px]">
-        <div>$CCC</div>
-        <ul className="flex gap-[42px]">
-          <li>ABOUT</li>
-          <li>ROADMAP</li>
-          <li>FAQ</li>
+    <header className="ultra absolute z-[1] max-w-[1620px] w-full mx-auto left-[50%] translate-x-[-50%] px-[10px] sm:px-[40px] md:px-[62px]">
+      <nav className="flex sm:flex-row justify-between items-center text-[18px] sm:text-[30px] md:text-[30px] font-[400] gap-[20px] sm:gap-[30px] xl:text-[54px] xl:gap-[140px]">
+        <div className="text-[24px] sm:text-[32px] md:text-[44px]">$CCC</div>
+        <ul className="flex items-center sm:flex-row gap-[5px] sm:gap-[20px] md:gap-[42px]">
+          <li>{translated.first.nav[1]}</li>
+          <li>{translated.first.nav[2]}</li>
+          <li>{translated.first.nav[3]}</li>
         </ul>
-        <div className="flex gap-5">
-          <img src="/icons/TG.svg" alt="" />
-          <img src="/icons/X.svg" alt="" />
+        <div className="flex gap-[10px] sm:gap-[15px] md:gap-[20px]">
+          <img
+            src="/icons/TG.svg"
+            alt="Telegram Icon"
+            className="w-[20px] sm:w-[25px] md:w-[30px]"
+          />
+          <img
+            src="/icons/X.svg"
+            alt="X Icon"
+            className="w-[20px] sm:w-[25px] md:w-[30px]"
+          />
         </div>
       </nav>
     </header>

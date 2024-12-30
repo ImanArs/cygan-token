@@ -1,33 +1,33 @@
+import useLanguage from "../hooks";
+import { translates } from "../translates";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Grid = ({ number, text, className }: any) => {
   return (
     <div
-      className={`relative border-[6px] bg-[#fff] w-[260px] border-[#000] pt-[70px] px-[20px] rounded-[60px] h-[360px] ${className}`}
+      className={`relative border-[6px] bg-[#fff] w-[60%] mx-auto md:mx-0 md:w-[260px] border-[#000] pt-[70px] px-[20px] rounded-[60px] h-auto md:h-[360px] ${className}`}
     >
-      <h3 className="text-[150px] absolute top-[-120px] left-[50%] translate-x-[-50%] lodrina">
+      <h3 className="text-[70px] md:text-[150px] absolute top-[-60px] md:top-[-120px] left-[50%] translate-x-[-50%] lodrina">
         {number}
       </h3>
-      <p
-        style={{ zIndex: 1000 }}
-        className="absolute text-[34px] lodrina text-center"
-      >
-        {text}
-      </p>
+      <p className="text-[34px] lodrina text-center">{text}</p>
     </div>
   );
 };
 
 export const Third = () => {
+  const { language } = useLanguage();
+  const translated = translates[language];
   return (
-    <div className="h-[130vh] coins w-full relative">
+    <div className="md:h-[130vh] min-h-[100vh] coins w-full relative">
       <img
         src="/icons/coin.png"
-        className="absolute w-[120px] top-[80px] left-[300px]"
+        className="absolute w-[50px] lg:w-[120px] top-[80px] left-[100px] md:left-[300px]"
         alt=""
       />
       <img
         src="/icons/card.png"
-        className="absolute w-[400px] top-[-180px] right-[200px]"
+        className="absolute w-[150px] lg:w-[320px] xl:w-[400px] top-[-50px] right-[80px] md:top-[-180px] md:right-[200px]"
         alt=""
       />
       <img
@@ -37,36 +37,35 @@ export const Third = () => {
       />
       <img
         src="/icons/ring.png"
-        className="absolute bottom-[-40px] right-[45%] w-[300px]"
+        className="absolute bottom-[-40px] right-[45%]  w-[150px] lg:w-[300px]"
         alt=""
       />
       <img
         src="/icons/shirt.png"
-        className="absolute bottom-[0px] right-[3%] w-[320px]"
+        className="absolute bottom-[0px] right-[3%] w-[150px] lg:w-[300px]"
         alt=""
       />
       <div className="bg-[#e07700e2] z-[-1] w-full h-full absolute top-[0%] left-[0%]"></div>
       <div className="">
-        <h2 className="lodrina text-[160px] text-center">ROADMAP</h2>
-        <div className="grid grid-cols-4 gap-[50px] max-w-[1400px] w-full mx-auto relative z-[1]">
+        <h2 className="lodrina text-[80px] md:text-[160px] text-center">
+          {translated.third.title}
+        </h2>
+        <div className="flex flex-col mt-[150px] md:mt-0 gap-[50px] md:grid md:grid-cols-4 md:gap-[50px] max-w-[1400px] w-full mx-auto relative z-[1]">
           <Grid
             number={1}
-            text={"Lamborghini for a crypto gypsy"}
-            className="mt-[120px]"
+            text={translated.third[1]}
+            className="md:mt-[120px]"
           />
-          <Grid number={2} text={"Buying a Dubai"} />
+          <Grid number={2} text={translated.third[2]} />
           <Grid
             number={3}
-            text={"Receiving the Most Gypsies Token 2025 reward"}
-            className="mt-[120px]"
+            text={translated.third[3]}
+            className="md:mt-[120px]"
           />
-          <Grid
-            number={4}
-            text={"Distribution of income from the project among the Tabor"}
-          />
+          <Grid number={4} text={translated.third[4]} />
         </div>
-        <div className="w-[calc(100%-12px)] h-[17px] bg-[#fff] absolute top-[413.5px] left-[0] z-[1]"></div>
-        <div className="w-full h-7 bg-white absolute z-[0] top-[408px] border-[6px] border-[#000]"></div>
+        <div className="hidden md:block w-[calc(100%-12px)] h-[17px] bg-[#fff] absolute top-[413.5px] left-[0] z-[1]"></div>
+        <div className="hidden md:block w-full h-7 bg-white absolute z-[0] top-[408px] border-[6px] border-[#000]"></div>
       </div>
     </div>
   );
