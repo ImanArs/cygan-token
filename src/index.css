@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Lodrina;
+  src: url(/fonts/LondrinaSolid-Regular.ttf);
+}
+
+.lodrina {
+  font-family: Lodrina;
+}
+
+.banner {
+  background-image: url(/images/banner.png);
+  background-size: 100% 120%;
+}
+.coins {
+  background-image: url(/images/coins.png);
+  background-size: cover;
+}
+.cubes {
+  background-image: url(/images/FAQ.png);
+  background-size: cover;
+}
+.columns {
+  background-image: url(/images/columns.png);
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+}
+.stroke {
+  -webkit-text-stroke: 3px black;
+}
+.ultra {
+  font-family: "Ultra", serif;
+}
