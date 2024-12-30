@@ -1,6 +1,6 @@
 import { First } from "./components/First";
-// import { Five } from "./components/Five";
-// import { Footer } from "./components/Footer";
+import { Five } from "./components/Five";
+import { Footer } from "./components/Footer";
 import { Fourth } from "./components/Fourth";
 import { Header } from "./components/Header";
 import { Second } from "./components/Second";
@@ -17,10 +17,10 @@ function App() {
       <Third />
       <div className="h-1 bg-black w-full" />
       <Fourth />
-      {/* <div className="h-1 bg-black w-full" /> */}
-      {/* <Five /> */}
-      {/* <div className="h-1 bg-black w-full" /> */}
-      {/* <Footer /> */}
+      <div className="h-1 bg-black w-full" />
+      <Five />
+      <div className="h-1 bg-black w-full" />
+      <Footer />
     </div>
   );
 }
