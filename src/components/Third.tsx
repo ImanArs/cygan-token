@@ -8,7 +8,7 @@ const Grid = ({ number, text, className }: any) => {
       className={`relative border-[6px] bg-[#fff] w-[100%] mx-auto md:mx-0 lg:w-[260px] border-[#000] 
         pt-[20px] md:pt-[70px] px-[10px] md:px-[20px] rounded-[26px] md:rounded-[60px] h-full md:h-[380px] ${className}`}
     >
-      <h3 className="text-[70px] md:text-[150px] absolute top-[-60px] md:top-[-120px] left-[50%] translate-x-[-50%] lodrina">
+      <h3 className="text-[70px] md:text-[150px] stroke text-[#fff] absolute top-[-60px] md:top-[-120px] left-[50%] translate-x-[-50%] lodrina">
         {number}
       </h3>
       <p className="text-[10px] sm:text-[18px] md:text-[26px] lg:text-[34px] lodrina text-center">
