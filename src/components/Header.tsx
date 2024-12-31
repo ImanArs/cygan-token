@@ -16,19 +16,19 @@ export const Header = () => {
     <header
       className={`${
         language === "ru" ? "nozhik" : "ultra"
-      } absolute z-[1] max-w-[1620px] w-full mx-auto left-[50%] translate-x-[-50%] px-[10px] sm:px-[40px] md:px-[62px] py-[20px]`}
+      } absolute h-[120px] z-[1] max-w-[1620px] w-full mx-auto left-[50%] translate-x-[-50%] px-[10px] sm:px-[40px] md:px-[62px]`}
     >
       <nav
         className={`flex ${
           language === "ru"
-            ? "text-[22px] sm:text-[36px] md:text-[40px] xl:text-[54px]"
+            ? "text-[28px] sm:text-[42px] md:text-[50px] xl:text-[96px]"
             : "text-[16px] sm:text-[30px] md:text-[30px] xl:text-[54px]"
-        } sm:flex-row justify-between items-center font-[400] gap-[20px] sm:gap-[30px]  xl:gap-[140px]`}
+        } sm:flex-row mx-auto justify-center md:justify-between items-center font-[400] gap-[20px] sm:gap-[30px]  xl:gap-[140px]`}
       >
-        <div className="text-[16px] sm:text-[24px] md:text-[32px] lg:text-[44px] lodrina">
+        <div className="text-[32px] md:text-[44px] lg:text-[81px] lodrina">
           $CCC
         </div>
-        <ul className="flex items-center sm:flex-row gap-[5px]  md:gap-[42px]">
+        <ul className="flex items-center sm:flex-row gap-[26px] md:gap-[42px] xl:gap-[130px]">
           <li>
             <button
               onClick={() => scrollToSection("#about")}
@@ -63,7 +63,7 @@ export const Header = () => {
             <img
               src="/icons/TG.svg"
               alt="Telegram Icon"
-              className="w-[40px] sm:w-[50px] md:w-[80px]"
+              className="w-[30px] sm:w-[50px] md:w-[80px]"
             />
           </a>
           <a
@@ -74,7 +74,7 @@ export const Header = () => {
             <img
               src="/icons/X.svg"
               alt="X Icon"
-              className="w-[40px] sm:w-[50px] md:w-[80px]"
+              className="w-[30px] sm:w-[50px] md:w-[80px]"
             />
           </a>
         </div>

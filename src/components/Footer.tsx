@@ -25,7 +25,7 @@ export const Footer = () => {
           >
             <img
               src="/icons/TG.svg"
-              className="w-[25px] sm:w-[40px] md:w-[60px]"
+              className="w-[32px] sm:w-[40px] md:w-[60px]"
               alt=""
             />
           </a>
@@ -36,7 +36,7 @@ export const Footer = () => {
           >
             <img
               src="/icons/X.svg"
-              className="w-[25px] sm:w-[40px] md:w-[60px]"
+              className="w-[32px] sm:w-[40px] md:w-[60px]"
               alt=""
             />
           </a>
@@ -45,7 +45,7 @@ export const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-[3px] md:px-[10px] font-[700] rounded-[6px] md:rounded-[26px] text-[8px] md:text-[30px] lg:text-[40px] border-[2px] md:border-[6px] border-[#000]">
+            <button className="px-[3px] h-full md:px-[10px] font-[700] rounded-[6px] md:rounded-[26px] text-[14px] md:text-[30px] lg:text-[40px] border-[2px] md:border-[6px] border-[#000]">
               {translated.footer.buy}
             </button>
           </a>
