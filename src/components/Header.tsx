@@ -21,8 +21,8 @@ export const Header = () => {
       <nav
         className={`flex ${
           language === "ru"
-            ? "text-[22px] sm:text-[40px] md:text-[48px] xl:text-[94px]"
-            : "text-[12px] sm:text-[28px] md:text-[28px] xl:text-[52px]"
+            ? "text-[22px] sm:text-[40px] md:text-[48px] xl:text-[84px]"
+            : "text-[12px] sm:text-[28px] md:text-[28px] xl:text-[42px]"
         } sm:flex-row flex mx-auto justify-between md:justify-between items-center font-[400] gap-[20px] sm:gap-[30px] xl:gap-[100px]`}
       >
         <div className="text-[26px] md:text-[44px] lg:text-[81px] lodrina">
