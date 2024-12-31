@@ -23,7 +23,7 @@ export const Header = () => {
           language === "ru"
             ? "text-[24px] sm:text-[42px] md:text-[50px] xl:text-[96px]"
             : "text-[14px] sm:text-[30px] md:text-[30px] xl:text-[54px]"
-        } sm:flex-row mx-auto justify-center md:justify-between items-center font-[400] gap-[20px] sm:gap-[30px]  xl:gap-[140px]`}
+        } sm:flex-row flex mx-auto justify-between w-[95%] md:justify-between items-center font-[400] gap-[20px] sm:gap-[30px]  xl:gap-[140px]`}
       >
         <div className="text-[32px] md:text-[44px] lg:text-[81px] lodrina">
           $CCC
