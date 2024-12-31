@@ -44,19 +44,19 @@ export const Fourth = () => {
           />
         </div>
         <div className="w-full flex flex-col">
-          <a
-            href="https://app.ston.fi/swap?chartVisible=false&ft=TON&tt=EQCmEVJQ5njttNRBa1bqqZsVq5WaHYliG9BU_d5BP1Bu2QXY"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="rounded-[50px] w-[60%] mx-auto md:w-full  h-[53px] md:h-[83px] lodrina border-[6px] border-[#000] bg-gradient-to-b from-[#ffd95b] to-[#9f811c]">
+          <button className="rounded-[50px] w-[60%] mx-auto md:w-full  h-[53px] md:h-[83px] lodrina border-[6px] border-[#000] bg-gradient-to-b from-[#ffd95b] to-[#9f811c]">
+            <a
+              href="https://app.ston.fi/swap?chartVisible=false&ft=TON&tt=EQCmEVJQ5njttNRBa1bqqZsVq5WaHYliG9BU_d5BP1Bu2QXY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="bg-[#FFC300] rounded-[90px] h-[50%] w-full relative">
                 <p className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-full text-[16px] md:text-[41px]">
                   {translated.fourth.btn}
                 </p>
               </div>
-            </button>
-          </a>
+            </a>
+          </button>
           <div className="text-center mt-[20px] md:mt-[100px]">
             <div className="lodrina text-[48px]">
               <img

@@ -8,7 +8,7 @@ export const Five = () => {
   const image = language === "ru" ? "/images/eng-5.png" : "/images/eng-5.png";
 
   return (
-    <div className="bg-[#000]">
+    <div className="bg-[#000]" id="faq">
       <div className="cubes relative h-[80vh] md:h-[130vh]">
         <img
           src="/icons/shirt.png"

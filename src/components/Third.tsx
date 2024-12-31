@@ -24,7 +24,7 @@ export const Third = () => {
   const image = language === "ru" ? "/images/ru-3.png" : "/images/eng-3.png";
 
   return (
-    <div className="md:h-[130vh] h-[70vh] coins w-full relative">
+    <div className="md:h-[130vh] h-[70vh] coins w-full relative" id="roadmap">
       <img
         src="/icons/coin.png"
         className="absolute w-[50px] lg:w-[120px] top-[70px] left-[60px] md:left-[300px]"

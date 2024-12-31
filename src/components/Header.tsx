@@ -5,6 +5,13 @@ export const Header = () => {
   const { language } = useLanguage();
   const translated = translates[language];
 
+  const scrollToSection = (id: string) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header
       className={`${
@@ -22,9 +29,30 @@ export const Header = () => {
           $CCC
         </div>
         <ul className="flex items-center sm:flex-row gap-[5px]  md:gap-[42px]">
-          <li>{translated.first.nav[1]}</li>
-          <li>{translated.first.nav[2]}</li>
-          <li>{translated.first.nav[3]}</li>
+          <li>
+            <button
+              onClick={() => scrollToSection("#about")}
+              className="cursor-pointer"
+            >
+              {translated.first.nav[1]}
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => scrollToSection("#roadmap")}
+              className="cursor-pointer"
+            >
+              {translated.first.nav[2]}
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => scrollToSection("#faq")}
+              className="cursor-pointer"
+            >
+              {translated.first.nav[3]}
+            </button>
+          </li>
         </ul>
         <div className="flex gap-[10px] sm:gap-[15px] md:gap-[20px]">
           <a

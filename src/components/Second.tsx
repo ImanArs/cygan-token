@@ -6,7 +6,10 @@ export const Second = () => {
   const translated = translates[language];
   const image = language === "ru" ? "/images/ru-2.png" : "/images/eng-2.png";
   return (
-    <div className="h-[60vh] md:h-[120vh] w-full bg-[#FFB325] relative overflow-hidden">
+    <div
+      className="h-[60vh] md:h-[120vh] w-full bg-[#FFB325] relative overflow-hidden"
+      id="about"
+    >
       <img
         src="/images/lines.svg"
         className="absolute top-[50%] translate-y-[-50%] left-[0%]"
