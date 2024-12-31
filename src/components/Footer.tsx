@@ -17,7 +17,7 @@ export const Footer = () => {
         <p className="text-[8px] md:text-[18px] lg:text-[30px] font-[700]">
           {translated.footer[1]} <br /> {translated.footer[2]}
         </p>
-        <div className="flex justify-between gap-[6px] md:gap-[14px] lg:gap-[28px]">
+        <div className="flex justify-between items-center gap-[6px] md:gap-[14px] lg:gap-[28px]">
           <a
             href="https://t.me/token_ccc"
             target="_blank"
