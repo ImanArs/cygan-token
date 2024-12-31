@@ -21,14 +21,14 @@ export const Header = () => {
       <nav
         className={`flex ${
           language === "ru"
-            ? "text-[28px] sm:text-[42px] md:text-[50px] xl:text-[96px]"
+            ? "text-[24px] sm:text-[42px] md:text-[50px] xl:text-[96px]"
             : "text-[16px] sm:text-[30px] md:text-[30px] xl:text-[54px]"
         } sm:flex-row mx-auto justify-center md:justify-between items-center font-[400] gap-[20px] sm:gap-[30px]  xl:gap-[140px]`}
       >
         <div className="text-[32px] md:text-[44px] lg:text-[81px] lodrina">
           $CCC
         </div>
-        <ul className="flex items-center sm:flex-row gap-[26px] md:gap-[42px] xl:gap-[130px]">
+        <ul className="flex items-center sm:flex-row gap-[18px] md:gap-[42px] xl:gap-[130px]">
           <li>
             <button
               onClick={() => scrollToSection("#about")}
@@ -63,7 +63,7 @@ export const Header = () => {
             <img
               src="/icons/TG.svg"
               alt="Telegram Icon"
-              className="w-[30px] sm:w-[50px] md:w-[80px]"
+              className="min-w-[28px] w-[28px] sm:w-[50px] md:w-[80px]"
             />
           </a>
           <a
@@ -74,7 +74,7 @@ export const Header = () => {
             <img
               src="/icons/X.svg"
               alt="X Icon"
-              className="w-[30px] sm:w-[50px] md:w-[80px]"
+              className="min-w-[28px] w-[28px] sm:w-[50px] md:w-[80px]"
             />
           </a>
         </div>
