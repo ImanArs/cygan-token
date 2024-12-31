@@ -6,10 +6,16 @@ export const Header = () => {
   const translated = translates[language];
 
   return (
-    <header className="ultra absolute z-[1] max-w-[1620px] w-full mx-auto left-[50%] translate-x-[-50%] px-[10px] sm:px-[40px] md:px-[62px]">
-      <nav className="flex sm:flex-row justify-between items-center text-[18px] sm:text-[30px] md:text-[30px] font-[400] gap-[20px] sm:gap-[30px] xl:text-[54px] xl:gap-[140px]">
-        <div className="text-[24px] sm:text-[32px] md:text-[44px]">$CCC</div>
-        <ul className="flex items-center sm:flex-row gap-[5px] sm:gap-[20px] md:gap-[42px]">
+    <header
+      className={`${
+        language === "ru" ? "nozhik" : "ultra"
+      } absolute z-[1] max-w-[1620px] w-full mx-auto left-[50%] translate-x-[-50%] px-[10px] sm:px-[40px] md:px-[62px]`}
+    >
+      <nav className="flex sm:flex-row justify-between items-center text-[16px] sm:text-[30px] md:text-[30px] font-[400] gap-[20px] sm:gap-[30px] xl:text-[54px] xl:gap-[140px]">
+        <div className="text-[16px] sm:text-[24px] md:text-[32px] lg:text-[44px] lodrina">
+          $CCC
+        </div>
+        <ul className="flex items-center sm:flex-row gap-[5px] sm:gap-[20px] text-[14px] sm:text-[24px] md:text-[32px] lg:text-[44px] md:gap-[42px]">
           <li>{translated.first.nav[1]}</li>
           <li>{translated.first.nav[2]}</li>
           <li>{translated.first.nav[3]}</li>
@@ -18,12 +24,12 @@ export const Header = () => {
           <img
             src="/icons/TG.svg"
             alt="Telegram Icon"
-            className="w-[20px] sm:w-[25px] md:w-[30px]"
+            className="w-[30px] sm:w-[40px] md:w-[60px]"
           />
           <img
             src="/icons/X.svg"
             alt="X Icon"
-            className="w-[20px] sm:w-[25px] md:w-[30px]"
+            className="w-[30px] sm:w-[40px] md:w-[60px]"
           />
         </div>
       </nav>

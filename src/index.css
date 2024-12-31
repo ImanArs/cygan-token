@@ -8,9 +8,16 @@
   font-family: Lodrina;
   src: url(/fonts/LondrinaSolid-Regular.ttf);
 }
+@font-face {
+  font-family: nozhik;
+  src: url(/fonts/Nozhik-Bold.otf);
+}
 
 .lodrina {
   font-family: Lodrina;
+}
+.nozhik {
+  font-family: nozhik;
 }
 
 .banner {
@@ -31,7 +38,10 @@
   background-repeat: no-repeat;
 }
 .stroke {
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 20px #000;
+
+  /* -webkit-text-stroke: revert; */
+  /* -webkit-text-stroke: revert-layer; */
 }
 .ultra {
   font-family: "Ultra", serif;
