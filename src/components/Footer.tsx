@@ -29,7 +29,11 @@ export const Footer = () => {
               alt=""
             />
           </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/ccc_token"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/icons/X.svg"
               className="w-[25px] sm:w-[40px] md:w-[60px]"

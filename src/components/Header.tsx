@@ -38,7 +38,11 @@ export const Header = () => {
               className="w-[30px] sm:w-[40px] md:w-[60px]"
             />
           </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/ccc_token"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/icons/X.svg"
               alt="X Icon"
