@@ -11,8 +11,8 @@ export const Second = () => {
       id="about"
     >
       <img
-        src="/images/lines.svg"
-        className="absolute top-[50%] translate-y-[-50%] left-[0%]"
+        src="/images/lines.png"
+        className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] h-[155vh]"
         alt=""
       />
       <img

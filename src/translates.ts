@@ -72,8 +72,8 @@ export const translates: Record<"eng" | "ru", LanguageContent> = {
     fourth: {
       title: "HOW TO BUY?",
       desc: {
-        1: "SWITCH TO DEDUST OR STON.FI",
-        2: "Switch to DeDust or STON.fi in Google Chrome or in the browser in the TonKeeper app. Connect your wallet. Enter a name (do not buy DUREVOLD) or insert the address of the $DUREV token and confirm. When Tonkeeper prompts you to sign, sign it.",
+        1: "BUY ON DEX",
+        2: "Switch to STON.FI or the TonKeeper app. Enter the ticker ($CCC) or insert the $CCC token address and confirm the purchase. When Tonkeeper offers you to sign, sign.",
         3: "WHERE TO BUY A TON?",
         4: "If you want to buy a TON using a bank card, you can do so using the TonKeeper or TonSpace apps. If you want to use CEX, exchange your cryptocurrency for TON, then withdraw them to a custodial TON wallet, such as TonKeeper.",
       },
@@ -113,13 +113,13 @@ export const translates: Record<"eng" | "ru", LanguageContent> = {
       1: "Lamborghini для крипто-цыгана",
       2: "Покупка Дубая",
       3: "Награда за самый цыганский токен 2025",
-      4: "Распределе-ние доходов от проекта среди таборами",
+      4: "Распределе-ние доходов от проекта cреди табора",
     },
     fourth: {
       title: "КАК КУПИТЬ?",
       desc: {
-        1: "ПЕРЕЙДИТЕ НА DEDUST ИЛИ STON.FI",
-        2: "Перейдите на DeDust или STON.FI в Google Chrome или в браузере в приложении TonKeeper. Подключите кошелек. Введите имя (не покупайте DUREVOLD) или вставьте адрес токена $DUREV и подтвердите. Когда Tonkeeper предложит вам подписать, подпишите.",
+        1: "ПОКУПКА С ПОМОЩЬЮ ДЕКСА",
+        2: "Перейдите на STON.FI или в приложение TonKeeper. Введите тикер ($CCC) или вставьте адрес токена $CCC и подтвердите покупку. Когда Tonkeeper предложит вам подписать, подпишите.",
         3: "ГДЕ КУПИТЬ ТОН?",
         4: "Если вы хотите купить TON с помощью банковской карты, вы можете это сделать с помощью приложений TonKeeper или TonSpace. Если вы хотите использовать CEX, обменивайте вашу криптовалюту на TON, затем выводите их на кастодиальный TON кошелек, например TonKeeper.",
       },
@@ -136,7 +136,7 @@ export const translates: Record<"eng" | "ru", LanguageContent> = {
     footer: {
       title: "ПОДПИСЫВАЙТЕСЬ НА НАС В СОЦСЕТЯХ!",
       1: "ДИСКЛЕЙМЕР:",
-      2: "$КРИПТО-ЦЫГАН ЭТО МЕМ ТОКЕН СОЗДАННЫЙ В ШУТКУ",
+      2: "$КРИПТО-ЦЫГАН ЭТО МЕМ ТОКЕН СОЗДАННЫЙ РАДИ ФАНА",
       buy: "КУПИТЬ",
     },
   },
