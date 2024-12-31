@@ -27,7 +27,11 @@ export const Header = () => {
           <li>{translated.first.nav[3]}</li>
         </ul>
         <div className="flex gap-[10px] sm:gap-[15px] md:gap-[20px]">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://t.me/token_ccc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/icons/TG.svg"
               alt="Telegram Icon"

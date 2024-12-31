@@ -18,7 +18,11 @@ export const Footer = () => {
           {translated.footer[1]} <br /> {translated.footer[2]}
         </p>
         <div className="flex justify-between gap-[6px] md:gap-[14px] lg:gap-[28px]">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://t.me/token_ccc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/icons/TG.svg"
               className="w-[25px] sm:w-[40px] md:w-[60px]"
@@ -32,9 +36,15 @@ export const Footer = () => {
               alt=""
             />
           </a>
-          <button className="px-[3px] md:px-[10px] font-[700] rounded-[6px] md:rounded-[26px] text-[8px] md:text-[30px] lg:text-[40px] border-[2px] md:border-[6px] border-[#000]">
-            {translated.footer.buy}
-          </button>
+          <a
+            href="https://app.ston.fi/swap?chartVisible=false&ft=TON&tt=EQCmEVJQ5njttNRBa1bqqZsVq5WaHYliG9BU_d5BP1Bu2QXY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-[3px] md:px-[10px] font-[700] rounded-[6px] md:rounded-[26px] text-[8px] md:text-[30px] lg:text-[40px] border-[2px] md:border-[6px] border-[#000]">
+              {translated.footer.buy}
+            </button>
+          </a>
         </div>
       </div>
     </div>
