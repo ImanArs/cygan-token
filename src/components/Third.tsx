@@ -63,18 +63,27 @@ export const Third = () => {
           <Grid
             number={1}
             text={translated.third[1]}
-            className="mt-[30px] sm:mt-[90px] "
+            className="mt-[30px] sm:mt-[50px] md:mt-[100px] "
           />
           <Grid number={2} text={translated.third[2]} />
           <Grid
             number={3}
             text={translated.third[3]}
-            className="mt-[30px] sm:mt-[90px] "
+            className="mt-[30px] sm:mt-[50px] md:mt-[100px] "
           />
           <Grid number={4} text={translated.third[4]} />
         </div>
-        <div className="w-[calc(100%-12px)] h-[6px] sm:h-[17px] bg-[#fff] absolute top-[240px] sm:top-[413.5px] lg:top-[573px] left-[0] z-[1]"></div>
-        <div className="w-full h-[13px] sm:h-7 bg-white absolute z-[0] top-[237px] sm:top-[408px] lg:top-[568px] border-[6px] border-[#000] border-x-0"></div>
+        {language === "eng" ? (
+          <>
+            <div className="w-[calc(100%-12px)] h-[6px] sm:h-[12px] md:h-[17px] bg-[#fff] absolute top-[240px] sm:top-[313.5px] lg:top-[553px] left-[0] z-[1]"></div>
+            <div className="w-full h-[13px] sm:h-[21px] md:h-7 bg-white absolute z-[0] top-[237px] sm:top-[308px] lg:top-[548px] border-[6px] border-[#000] border-x-0"></div>
+          </>
+        ) : (
+          <>
+            <div className="w-[calc(100%-12px)] h-[4px] sm:h-[12px] md:h-[11px] bg-[#fff] absolute top-[230px] sm:top-[323.5px] md:top-[462px] lg:top-[533px] left-[0] z-[1]"></div>
+            <div className="w-full h-[11px] sm:h-[21px] md:h-[20px] bg-white absolute z-[0] top-[226px] sm:top-[318px] md:top-[457px] lg:top-[528px] border-[6px] border-[#000] border-x-0"></div>
+          </>
+        )}
       </div>
     </div>
   );
