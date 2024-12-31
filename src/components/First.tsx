@@ -4,14 +4,21 @@ import { translates } from "../translates";
 export const First = () => {
   const { language, changeLanguage } = useLanguage();
   const translated = translates[language];
-  const image =
-    language === "ru" ? "/images/ru-title.png" : "/images/eng-title.png";
+  const imageMobRu =
+    innerWidth < 768 ? "/images/mob-rus-title.png" : "/images/ru-title.png";
+  const imageMobEng =
+    innerWidth < 768 ? "/images/mob-eng-title.png" : "/images/eng-title.png";
+  const image = language === "ru" ? imageMobRu : imageMobEng;
 
   return (
     <>
       <div className="banner min-h-screen flex justify-center pt-[100px] relative">
-        <div className="lodrina text-[50px] text-center sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[150px] font-[400] text-[#fff] stroke">
-          <img src={image} className="w-[1100px]" alt="lol" />
+        <div className="lodrina">
+          <img
+            src={image}
+            className={` ${innerWidth < 768 ? "w-[330px]" : "w-[1100px]"}`}
+            alt=""
+          />
         </div>
         <button className="absolute bottom-[20px] sm:bottom-[30px] md:bottom-[38px] left-[20px] sm:left-[40px] md:left-[63px] rounded-[15px] sm:rounded-[20px] py-[6px] sm:py-[8px] md:py-[9px] px-[10px] sm:px-[12px] md:px-[15px] border-[#000] border-[4px] sm:border-[5px] md:border-[6px] bg-[#fff] flex gap-2 items-center">
           <img
